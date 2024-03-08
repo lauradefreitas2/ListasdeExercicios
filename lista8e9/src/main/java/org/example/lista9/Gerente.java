@@ -1,19 +1,16 @@
 package org.example.lista9;
 
 
-public class Gerente extends Funcionario {
+public class Gerente extends FuncionarioBase {
+    private double bonus;
 
-    private String departamento;
-
-
-    public Gerente(String nome, double salario, String departamento) {
-        super(nome, salario);
-        this.departamento = departamento;
+    public Gerente(String nome, double salarioBase, double bonus) {
+        super(nome, salarioBase);
+        this.bonus = bonus;
     }
-
 
     @Override
     public double calcularSalario() {
-        return salario + 1000;
+        return salarioBase + bonus;
     }
 }

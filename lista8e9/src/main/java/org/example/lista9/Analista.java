@@ -1,8 +1,7 @@
 package org.example.lista9;
 
-
-public class Desenvolvedor extends FuncionarioBase {
-    public Desenvolvedor(String nome, double salarioBase) {
+public class Analista extends FuncionarioBase {
+    public Analista(String nome, double salarioBase) {
         super(nome, salarioBase);
     }
 
